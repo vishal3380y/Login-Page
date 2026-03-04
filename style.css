@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height:100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url("nature.jpg");
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    max-width: 320px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 0 10px black;
+    background: transparent;
+    border-radius: 30px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+
+.form-header{
+    align-items: center;
+    color: Black;
+    font-size: bold;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.input-container input{
+    padding: 15px 20px;
+    width: 250px;
+    border-radius: 30px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin-bottom: 15px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: orange;
+}
+
+.forgot-password{
+    text-align: right;
+}
+
+.submit{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 15px;
+    background: transparent;
+    color: Black;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.signup{
+    margin-top: 10px;
+}
+
+.google{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 15px;
+    background: transparent;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.twitter{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 15px;
+    background: transparent;
+    font-weight: bold;
+    font-size: medium;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: -20px;
+}
+
+
+@media (max-width: 480px) {
+    body {
+        /* min-height is better for mobile to prevent background cutting when keyboard opens */
+        min-height: 100vh;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .form-container {
+        width: 90%;          /* Uses 90% of the phone screen */
+        padding: 25px;       /* Reduced padding to give more space for text */
+        max-width: none;     /* Removes the 320px limit */
+    }
+
+    .input-container input,
+    .submit,
+    .google,
+    .twitter {
+        width: 100% !important; /* Forces elements to fill the container width */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .form-header {
+        font-size: 1.5rem;    /* Makes the header slightly smaller for mobile */
+    }
+
+    .twitter {
+        margin-bottom: 0;     /* Resets that negative margin for better spacing */
+    }
+}
